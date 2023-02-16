@@ -1,0 +1,8 @@
+<nav>
+  <div class="nav-options">
+      <h3 (click)="showStart = true">Start</h3>   
+      <h3 (click)="showSearch = true">Search</h3>    
+  </div>
+  <app-start *ngIf="showStart" (closeStart)="onCloseStart()"></app-start>
+  <app-search-bar *ngIf="showSearch" (closeSearchBar)="onCloseSearch()"></app-search-bar>
+</nav>
