@@ -1,6 +1,18 @@
 <div class="modal">
     <div class="modal-content">
-        <h3>projects</h3>
-        <h3 (click)="onCloseProjects()">close</h3>
-    </div>    
+        <div class="top-bar">
+            <img id="folder-ico" src="../../../assets/folder.ico" alt="Notepad">
+            <span id="title">Projects</span>
+            <div class="close-area">
+                <img id="minus" src="../../../assets/min.png" alt="">
+                <img id="square" src="../../../assets/max.png" alt="">
+                <img id="close" src="../../../assets/close.svg" (click)="onCloseProjects()">
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="bottom-left">
+                <span>2 items |</span>
+            </div>
+        </div>
+    </div>      
 </div>

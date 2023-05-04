@@ -1,13 +1,33 @@
 <div class="container">
     <app-navbar></app-navbar>
         <div id="escritorio">
-            <h3 (dblclick)="showAbout = true">about-me.txt</h3>
-            <h3 (dblclick)="showProjects = true">projects.txt</h3>
-            <h3 (dblclick)="showContact = true">contact-me.txt</h3>
+            <div class="shortcut" (dblclick)="showAbout = true">
+                <img src="../assets/text-file.ico"><br>
+                <span id="about-me">about.txt</span>
+            </div>      
+            <div class="shortcut" (dblclick)="showProjects = true">
+                <img src="../assets/folder.ico"><br>
+                <span id="project">Projects</span>
+            </div>
+            <div class="shortcut" (dblclick)="goToGithub()">
+                <img id="github-ico" src="../assets/github.png">
+                <span id="github">Github</span>
+            </div>
+            <div class="shortcut" (dblclick)="goToMail()"> 
+                <img id="mail-ico" src="../assets/mail.png">
+                <span id="mail">Mail</span>
+            </div>
+            <div class="shortcut" (dblclick)="goToLinkedIn()">
+                <img id="linkedin-ico" src="../assets/linkedin.png">
+                <span id="linkedin">LinkedIn</span>
+            </div>
+            <div class="shortcut" (dblclick)="goToCv()">
+                <img id="pdf-ico" src="../assets/pdf.png">
+                <span id="pdf">CV</span>
+            </div>
         </div>
     <app-about *ngIf="showAbout" (closeAbout)="onCloseAbout()"></app-about>
-    <app-projects *ngIf="showContact" (closeProjects)="onCloseContact()"></app-projects>
-    <app-contact *ngIf="showProjects" (closeContact)="onCloseProjects()"></app-contact>
+    <app-projects *ngIf="showProjects" (closeProjects)="onCloseProjects()"></app-projects>
 </div>
 
 
