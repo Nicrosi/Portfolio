@@ -1,17 +1,65 @@
 <div class="modal">
     <div class="modal-content">
         <div class="top-bar">
-            <img id="folder-ico" src="../../../assets/folder.ico" alt="Notepad">
-            <span id="title">Projects</span>
+            <div class="open-tab">
+                <img id="folder-ico" src="../../../assets/folder.ico" alt="Notepad">
+                <span id="title">Projects</span>
+                <div class="close-tab">
+                    <img id="folder-close" src="../../../assets/close.svg">
+                </div>                
+            </div>            
             <div class="close-area">
                 <img id="minus" src="../../../assets/min.png" alt="">
                 <img id="square" src="../../../assets/max.png" alt="">
                 <img id="close" src="../../../assets/close.svg" (click)="onCloseProjects()">
             </div>
         </div>
+        <div class="tool-area">
+            <div class="new">
+                <img id="new-ico" src="../../../assets/new.svg">
+                New
+                <img id="new-dd" src="../../../assets/drop-down.png">
+            </div>
+                <img id="separator-new" src="../../../assets/separator.png">
+                <img id="inactive-tools" src="../../../assets/inactive-tools.png">
+                <img id="inactive-separator" src="../../../assets/separator.png">
+            <div class="sort">
+                <img id="sort-ico" src="../../../assets/sort.png">
+                Sort
+                <img id="sort-dd" src="../../../assets/drop-down.png">
+            </div>
+            <div class="view">
+                <img id="view-ico" src="../../../assets/hamburger.png">
+                View
+                <img id="view-dd" src="../../../assets/drop-down.png">
+            </div>
+                <img id="separator-view" src="../../../assets/separator.png">
+            <div class="three-dots">
+                <img id="three-dots" src="../../../assets/three-dots.png">
+            </div>
+        </div>
+        <div class="search-area">
+            <div class="left-arrow"><img id="left-arrow" src="../../../assets/left-arrow.png" alt=""></div>
+            <div class="right-arrow"><img id="right-arrow" src="../../../assets/right-arrow.png" alt=""></div>
+            <div class="search-dd"><img id="search-dd" src="../../../assets/drop-down.png" alt=""></div>
+            <div class="up-arrow"><img id="up-arrow" src="../../../assets/up-arrow.png" alt=""></div>
+                <div class="path-box">
+                    <img id="box-search-ico" src="../../../assets/folder.ico">
+                    <a>></a> <a>Documents</a> <a>></a> <a>Projects</a>
+                    <div class="path-box-dd"><img id="path-box-dd" src="../../../assets/drop-down.png"></div>
+                    <div class="path-box-reload"><img id="path-box-reload" src="../../../assets/reload.png"></div>
+                </div>
+                <div class="search-box">
+                    <a>Search Projects</a>
+                    <img id="search-box-ico" src="../../../assets/search2.png">
+                </div>
+        </div>
         <div class="bottom-bar">
             <div class="bottom-left">
                 <span>2 items |</span>
+            </div>
+            <div class="bottom-right">
+                <img id="bottom-right" src="../../../assets/bottom-right.png">
             </div>
         </div>
     </div>      
