@@ -621,3 +621,56 @@
 .bottom-right{
   margin-left: 693px;
 }
+
+.project-shortcut{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 147px;
+  width: 105px;
+  height: 145px;
+  flex-direction: column;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 0.2em;
+}
+
+.project-shortcut:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+.project-shortcut:nth-child(1){
+  margin-left: 216px;
+}
+
+.project-shortcut:nth-child(2){
+  margin-left: 325px;
+}
+
+.project-shortcut:nth-child(3){
+  margin-left: 437px;
+}
+
+.project-shortcut:nth-child(4){
+  margin-left: 548px;
+}
+
+.dog-ico{
+  width: 90px;
+  margin-top: 13px;
+}
+
+.dog-gh-ico{
+  margin-top: 13px;
+  width: 90px;
+}
+
+.synnet-ico{
+  width: 90px;
+}
+
+.synnet-gh-ico{
+  width: 90px;
+}

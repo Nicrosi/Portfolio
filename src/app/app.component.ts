@@ -26,7 +26,7 @@ export class AppComponent {
   }
   public goToCv(): void {
     window.open(
-      'https://drive.google.com/file/d/1glMcvLmCru-PaMi2uz96jU9IDVImvHDU/view?usp=share_link',
+      'https://drive.google.com/file/d/15Ij7TSYTNDkBtU99liQWVD6SKVN9QD7W/view?usp=sharing',
       '_blank'
     );
   }
