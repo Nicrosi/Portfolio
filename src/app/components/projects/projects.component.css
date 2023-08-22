@@ -370,7 +370,7 @@
   height: 30px;
   margin: 11px;
   border: 1px;
-  border-color: rgb(83, 83, 83);
+  border-color: 1px solid rgb(83, 83, 83);
   border-style: solid;
   color: rgb(83, 83, 83);
   font-family: "Segoe UI", Arial, sans-serif;
@@ -384,6 +384,165 @@
 #search-box-ico{
   margin-right: 10px;
   width: 14px;
+}
+
+.side-bar{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-right: 2px solid rgb(43, 43, 43);
+  width: 200px;
+  height: 435px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+}
+
+.line-qa{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 182px;
+  border: none;
+  border-top: 1px solid rgb(56, 56, 56);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.line-qa2{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 182px;
+  border: none;
+  border-top: 1px solid rgb(56, 56, 56);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.home-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+}
+
+.home-qa:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+#home-qa{
+  margin-right: 4px;
+  margin-left: 30px;
+  width: 16px;
+}
+
+.desktop-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+}
+
+.desktop-qa:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+#desktop-qa{
+  margin-right: 4px;
+  margin-left: 28px;
+  width: 16px;
+}
+
+.documents-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 2px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+  background-color: rgb(51, 51, 51);
+}
+
+.documents-qa:hover{
+  background-color: rgb(119,119,119);
+}
+
+#documents-qa{
+  margin-right: 4px;
+  margin-left: 28px;
+  width: 16px;
+}
+
+.downloads-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+}
+
+.downloads-qa:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+#downloads-qa{
+  margin-right: 4px;
+  margin-left: 28px;
+  width: 16px;
+}
+
+.this-pc-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+}
+
+.this-pc-qa:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+#this-pc-qa{
+  margin-right: 4px;
+  margin-left: 30px;
+  width: 16px;
+}
+
+.network-qa{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2px;
+  height: 30px;
+  width: 194px;
+  border-radius: 0.1em;
+}
+
+.network-qa:hover{
+  background-color: rgb(77, 77, 77);
+}
+
+#network-qa{
+  margin-right: 4px;
+  margin-left: 30px;
+  width: 16px;
 }
 
 .close-area{
