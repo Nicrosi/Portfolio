@@ -5,10 +5,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css'],
 })
-export class SearchBarComponent {
-  @Output() closeSearchBar = new EventEmitter<void>();
-
-  public onCloseSearchBar(): void {
-    this.closeSearchBar.emit();
-  }
-}
+export class SearchBarComponent {}

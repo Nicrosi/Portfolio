@@ -1,9 +1,9 @@
 <nav>
   <div class="nav-options"> 
-    <div class="home" (click)="showStart = true">
+    <div class="home" (click)="showStart = !showStart">
       <img id="home-ico" src="../../../assets/home.ico">
     </div>
-      <div class="search" (click)="showSearch = true">
+      <div class="search" (click)="showSearch = !showSearch">
         <img id="search-ico" src="../../../assets/search.svg">
         <span>Search</span>
       </div>      
@@ -12,6 +12,6 @@
     <p>{{ time | date: 'hh:mm a' }}</p>
     <p>{{ time | date: 'dd/MM/YYYY' }}</p>
   </div> 
-  <app-start *ngIf="showStart" (closeStart)="onCloseStart()"></app-start>
-  <app-search-bar *ngIf="showSearch" (closeSearchBar)="onCloseSearch()"></app-search-bar>
+  <app-start *ngIf="showStart"></app-start>
+  <app-search-bar *ngIf="showSearch"></app-search-bar>
 </nav>

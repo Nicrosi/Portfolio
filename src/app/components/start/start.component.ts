@@ -5,10 +5,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
   templateUrl: './start.component.html',
   styleUrls: ['./start.component.css'],
 })
-export class StartComponent {
-  @Output() closeStart = new EventEmitter<void>();
-
-  public onCloseStart(): void {
-    this.closeStart.emit();
-  }
-}
+export class StartComponent {}

@@ -11,12 +11,6 @@ import { map, share } from 'rxjs/operators';
 export class NavbarComponent {
   showStart = false;
   showSearch = false;
-  public onCloseStart(): void {
-    this.showStart = !this.showStart;
-  }
-  public onCloseSearch(): void {
-    this.showSearch = !this.showSearch;
-  }
 
   time = new Date();
   rxTime = new Date();
