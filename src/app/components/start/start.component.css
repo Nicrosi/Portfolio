@@ -11,21 +11,131 @@
   color: white;
   border: solid 1px rgb(57, 59, 62);
   z-index: 4;
+  overflow: hidden;
 }
 
 .start-search{
+  display: flex;
+  justify-content: left;
+  align-items: center;
   background-color: rgb(32, 32, 32);
   border-radius: 20px;
-  border: solid 1px rgb(51, 51, 51);
-  caret-color: white;
-  color: white;
-  outline: none;
+  border: solid 1px rgb(51, 51, 51);    
   margin: 35px;
   width: 572px;
   height: 30px;
 }
 
-.start-search::placeholder{
+.start-txt{
+  border: none;
+  background-color: rgb(32, 32, 32);
+  caret-color: white;
+  width: 500px;
+  color: white;
+  outline: none;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.start-txt::placeholder{
   color: rgb(151, 151, 151);
 }
   
+#search-txt-ico{
+  margin-left: 15px;
+  margin-right: 12px;
+  width: 16px;
+}
+
+.tech-stack{
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-left: 32px;
+  margin-top: 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+}
+
+.start-shortcut{
+  width: 95px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  border-radius: 0.3em;
+}
+
+.start-shortcut:hover{
+  background-color: rgb(49, 49, 49);
+  transition: 0.1s;
+}
+
+#st-shortcut-ico{
+  width: 35px;
+}
+
+#tech-title{
+  margin-left: 63px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tech-bottom{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid rgb(25, 25, 25);
+  background-color: rgb(28, 28, 28);
+  height: 63px;
+}
+
+.username{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 0.3em;
+  transition: 0.1s;
+  width: 162px;
+  height: 40px;
+  margin-left: 52px;
+  margin-top: 10px;
+}
+
+.username:hover{
+  background-color: rgb(41, 41, 41);
+  transition: 0.1s;
+}
+
+.my-photo{
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.shutdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 12px;
+  right: 50px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: 0.1s;
+  border-radius: 0.3em;
+}
+
+.shutdown:hover{
+  background-color: rgb(41, 41, 41);
+  transition: 0.1s;
+}
+
+#shutdown-ico{
+  width: 22px;
+}
+
