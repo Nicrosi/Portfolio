@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DatePipe } from '@angular/common';
 import { timer, Subscription } from 'rxjs';
 import { map, share } from 'rxjs/operators';
 

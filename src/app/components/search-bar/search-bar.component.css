@@ -11,4 +11,161 @@
   color: white;
   border: solid 1px rgb(57, 59, 62);
   z-index: 4;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
   }
+
+#recent-text{
+  position: absolute;
+  top: 30px;
+  margin-left: 23px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#sb-shortcut-ico{
+  width: 25px;
+  margin: 8px;
+}
+
+#bf-ico{
+  width: 18px;
+}
+
+#meme{
+  height: 240px;
+  width: 420px;
+  border-radius: 8px;
+}
+
+#game-ico{
+  width: 90px;
+  border-radius: 3px;
+}
+
+#chess{
+  margin-right: 5px;
+}
+
+#fork{
+  margin-right: 5px;
+}
+
+.game-ico{
+  display: inline;
+  margin-left: 12px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.game-title{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 150px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.games{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 420px;
+  height: 180px;
+  margin-top: 270px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+#food-ico{
+  width: 124px;
+  height: 80px;
+  border-radius: 3px;
+}
+
+.food-ico{
+  display: inline;
+  margin-left: 12px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.food-title{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 150px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.food{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 420px;
+  height: 180px;
+  margin-top: 470px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+.meme{
+  margin-top: 10px;
+  margin-left: 8px;
+  position: absolute;
+}
+
+.bafo{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.bafo:hover{
+  background-color: rgb(54, 54, 54);
+}
+
+.recent-apps{
+  margin-left: 23px;
+  width: 350px;
+  height: 500px;
+}
+
+.sb-shortcut{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sb-shortcut:hover{
+  background-color: rgb(54, 54, 54);
+}
+
+.search-news{
+  margin-left: 325px;
+}
+
+.search-date{
+  margin-top: 23px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
