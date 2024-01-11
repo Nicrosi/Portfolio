@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-
+import { growAndFadeAnimation } from 'src/app/grow-and-fade.animation';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  animations: [growAndFadeAnimation],
 })
 export class ProjectsComponent {
   @Output() closeProjects = new EventEmitter<void>();

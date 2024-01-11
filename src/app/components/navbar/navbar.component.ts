@@ -1,15 +1,32 @@
 import { Component } from '@angular/core';
 import { timer, Subscription } from 'rxjs';
 import { map, share } from 'rxjs/operators';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { trigger, transition, query, animateChild } from '@angular/animations';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
+  animations: [
+    trigger('blub', [
+      transition('* => void', [
+        query('@*', [animateChild()], { optional: true }),
+      ]),
+    ]),
+  ],
 })
 export class NavbarComponent {
-  showStart = false;
-  showSearch = false;
+  showStart: boolean = false;
+  showSearch: boolean = false;
+
+  toggleStart() {
+    this.showStart = !this.showStart;
+  }
+
+  toggleSearch() {
+    this.showSearch = !this.showSearch;
+  }
 
   time = new Date();
   rxTime = new Date();

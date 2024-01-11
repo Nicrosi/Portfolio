@@ -26,8 +26,8 @@
                 <span id="pdf">CV</span>
             </div>
         </div>
-    <app-about *ngIf="showAbout" (closeAbout)="onCloseAbout()"></app-about>
-    <app-projects *ngIf="showProjects" (closeProjects)="onCloseProjects()"></app-projects>
+    <app-about *ngIf="showAbout" (closeAbout)="onCloseAbout()" [@blub]></app-about>
+    <app-projects *ngIf="showProjects" (closeProjects)="onCloseProjects()" [@blub]></app-projects>
 </div>
 
 

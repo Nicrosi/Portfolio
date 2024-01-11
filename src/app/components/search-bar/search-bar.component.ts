@@ -1,8 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { slideUpAnimation } from '../../slide-up.animation';
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css'],
+  animations: [slideUpAnimation],
 })
 export class SearchBarComponent {
   today = new Date();

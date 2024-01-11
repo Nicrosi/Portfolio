@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
+import { transition, trigger, query, animateChild } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  animations: [
+    trigger('blub', [
+      transition('* => void', [
+        query('@*', [animateChild()], { optional: true }),
+      ]),
+    ]),
+  ],
 })
 export class AppComponent {
   title = 'Portfolio';
