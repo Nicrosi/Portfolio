@@ -2,27 +2,27 @@
     <app-navbar></app-navbar>
         <div id="escritorio">
             <div class="shortcut" (dblclick)="showAbout = true">
-                <img src="../assets/text-file.ico"><br>
+                <img src="../assets/text-file.ico" draggable="false"><br>
                 <span id="about-me">about.txt</span>
             </div>      
             <div class="shortcut" (dblclick)="showProjects = true">
-                <img src="../assets/folder.ico"><br>
+                <img src="../assets/folder.ico" draggable="false"><br>
                 <span id="project">Projects</span>
             </div>
             <div class="shortcut" (dblclick)="goToGithub()">
-                <img id="github-ico" src="../assets/github.png">
+                <img id="github-ico" src="../assets/github.png" draggable="false">
                 <span id="github">Github</span>
             </div>
             <div class="shortcut" (dblclick)="goToMail()"> 
-                <img id="mail-ico" src="../assets/mail.png">
+                <img id="mail-ico" src="../assets/mail.png" draggable="false">
                 <span id="mail">Mail</span>
             </div>
             <div class="shortcut" (dblclick)="goToLinkedIn()">
-                <img id="linkedin-ico" src="../assets/linkedin.png">
+                <img id="linkedin-ico" src="../assets/linkedin.png" draggable="false">
                 <span id="linkedin">LinkedIn</span>
             </div>
             <div class="shortcut" (dblclick)="goToCv()">
-                <img id="pdf-ico" src="../assets/pdf.png">
+                <img id="pdf-ico" src="../assets/pdf.png" draggable="false">
                 <span id="pdf">CV</span>
             </div>
         </div>

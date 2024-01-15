@@ -1,19 +1,19 @@
 <div class="modal"[@growAndFade]>
     <div class="modal-content">
         <div class="top-bar">
-            <img id="notepad-ico" src="../../../assets/notepad.webp" alt="Notepad">
+            <img id="notepad-ico" src="../../../assets/notepad.webp" draggable="false">
             <span id="title">About - Notepad</span>
             <div class="close-area">
-                <img id="minus" src="../../../assets/min.png" alt="">
-                <img id="square" src="../../../assets/max.png" alt="">
-                <img id="close" src="../../../assets/close.svg" (click)="onCloseAbout()">
+                <img id="minus" src="../../../assets/min.png" alt="" draggable="false">
+                <img id="square" src="../../../assets/max.png" alt="" draggable="false">
+                <img id="close" src="../../../assets/close.svg" (click)="onCloseAbout()" draggable="false">
             </div>
         </div>
         <div class="settings">
             <span>File</span>
             <span>Edit</span>
             <span>View</span>
-            <img id="settings-ico" src="../../../assets/settings.png">
+            <img id="settings-ico" src="../../../assets/settings.png" draggable="false">
         </div>     
         <textarea spellcheck="false" [ngModel]="myText"></textarea>
         <div class="bottom-bar">
