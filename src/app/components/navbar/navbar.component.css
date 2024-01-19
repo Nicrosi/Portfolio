@@ -24,8 +24,8 @@ nav{
 .clock{
     position: absolute;
     right: 0;
-    bottom: 1px;
-    padding: 7px;
+    bottom: 2px;
+    padding: 6px;
     font-size: 11px;    
     font-family: "Segoe UI", Arial, sans-serif;
     color: white;
@@ -35,7 +35,7 @@ nav{
 
 .clock:hover{
     background-color: rgba(107, 107, 107, 0.3);
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.3s;
 }
 
@@ -45,7 +45,7 @@ nav{
     margin-right: 370px;
     top: 4px;
     padding: 3px;
-    transition: 0.3s;
+    transition: 0.1s;
     justify-content: center;
     display: flex;
 }
@@ -53,8 +53,8 @@ nav{
 
 .home:hover{
     background-color: rgba(107, 107, 107, 0.3);
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 3px;
+    transition: 0.1s;
 }	
 
 #home-ico{
@@ -75,12 +75,12 @@ nav{
     background-color: rgb(45, 45, 45);
     border-radius: 50px;
     border-top: 0.5px solid rgba(255, 255, 255, 0.075);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .search:hover{
     background-color: rgb(50, 50, 50);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 
@@ -89,4 +89,75 @@ nav{
     margin-right: 5px;
 }
 
+.eng-us{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    font-size: 11px;
+    font-weight: 610;
+    margin-left: 1723px;
+    width: 40px;
+    height: 42px;
+    top: 2px;
+    border-radius: 3px;
+    transition: 0.1s;
+}
+
+.eng-us:hover{
+    background-color: rgba(107, 107, 107, 0.3);
+    transition: 0.1s;
+}
+
+.wi-fi{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
+    margin-left: 1765px;
+    width: 60px;
+    height: 42px;
+    border-radius: 3px;
+    transition: 0,1s;
+}
+
+.wi-fi:hover{
+    background-color: rgba(107, 107, 107, 0.3);
+    transition: 0.1s;
+}
+
+.microphone{
+    position: absolute;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
+    margin-left: 1691px;
+    width: 30px;
+    height: 42px;
+    border-radius: 3px;
+    transition: 0.1;
+}
+
+.microphone:hover{
+    background-color: rgba(107, 107, 107, 0.3);
+    transition: 0.1s;
+}
+
+#wi-fi{
+    width: 16px;
+    margin-right: 5px;
+}
+
+#microphone{
+    width: 20px;
+}
+
+#volume{
+    width: 17px;
+}
 
