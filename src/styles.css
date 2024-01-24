@@ -2,6 +2,7 @@ body{
     background-image: url(/assets/background.jpg);
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 *{

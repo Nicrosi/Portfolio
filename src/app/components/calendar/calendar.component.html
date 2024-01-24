@@ -1,4 +1,20 @@
-<div class="modal">
-    <div class="modal-content">          
+<div class="modal" [@slideUp]>
+    <div class="modal-content"> 
+        <table>
+            <thead>
+              <tr>
+                <th *ngFor="let day of days">{{ day }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let week of calendarDays">
+                <ng-container *ngFor="let day of week">
+                  <td [class.current-day]="day && day.isCurrentDay">
+                    {{ day && day.day !== 0 ? day.day : '' }}
+                  </td>
+                </ng-container>
+              </tr>
+            </tbody>
+          </table>                                        
     </div>
 </div>

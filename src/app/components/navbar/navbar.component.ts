@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { timer, Subscription } from 'rxjs';
 import { map, share } from 'rxjs/operators';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, transition, query, animateChild } from '@angular/animations';
 
 @Component({
@@ -19,6 +18,7 @@ import { trigger, transition, query, animateChild } from '@angular/animations';
 export class NavbarComponent {
   showStart: boolean = false;
   showSearch: boolean = false;
+  showCalendar: boolean = false;
 
   toggleStart() {
     this.showStart = !this.showStart;
@@ -26,6 +26,10 @@ export class NavbarComponent {
 
   toggleSearch() {
     this.showSearch = !this.showSearch;
+  }
+
+  toggleCalendar() {
+    this.showCalendar = !this.showCalendar;
   }
 
   time = new Date();
