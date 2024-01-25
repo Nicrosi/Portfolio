@@ -1,20 +1,25 @@
 <div class="modal" [@slideUp]>
     <div class="modal-content"> 
+      <div class="month-year">
+        {{currentMonth}} {{currentYear}}
+      </div>
+      <div class="calendar">        
         <table>
             <thead>
               <tr>
-                <th *ngFor="let day of days">{{ day }}</th>
+                <th class="day-name" *ngFor="let day of days">{{ day }}</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let week of calendarDays">
                 <ng-container *ngFor="let day of week">
-                  <td [class.current-day]="day && day.isCurrentDay">
+                  <td [class.current-day]="day && day.isCurrentDay" [class.not-current-day]="!day.isCurrentDay" [class.other-month-day]="!day.isCurrentMonth">
                     {{ day && day.day !== 0 ? day.day : '' }}
                   </td>
                 </ng-container>
               </tr>
             </tbody>
-          </table>                                        
+          </table>   
+        </div>                                     
     </div>
 </div>

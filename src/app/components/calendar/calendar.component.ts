@@ -9,6 +9,9 @@ import { slideLeftAnimation } from 'src/app/slide-left.animation';
 export class CalendarComponent implements OnInit {
   days: string[] = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
   calendarDays: any = [];
+  currentDate = new Date();
+  currentYear = this.currentDate.getFullYear();
+  currentMonth = this.currentDate.toLocaleString('default', { month: 'long' });
 
   constructor() {}
 
@@ -18,49 +21,52 @@ export class CalendarComponent implements OnInit {
 
   generateCalendar(): void {
     const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth();
+    const currentDay = currentDate.getDate();
 
-    const firstDayOfMonth = new Date(year, month, 1);
-    const lastDayOfMonth = new Date(year, month + 1, 0);
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+    const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
 
     const firstDayOfWeek = firstDayOfMonth.getDay();
-    const lastDayOfWeek = lastDayOfMonth.getDay();
+    const daysInMonth = lastDayOfMonth.getDate();
 
-    let currentDay = 1;
+    let currentCalendarDay = 1;
     let week: any = [];
-    // Fill in the leading empty cells before the first day of the month
-    for (let i = 0; i < firstDayOfWeek; i++) {
-      week.push(0);
+
+    // Fill in the days of the previous month
+    const prevMonthLastDay = new Date(currentYear, currentMonth, 0).getDate();
+    const prevMonthDays = firstDayOfWeek === 0 ? 7 : firstDayOfWeek; // Calculate how many days from previous month to show
+    for (
+      let i = prevMonthLastDay - prevMonthDays + 1;
+      i <= prevMonthLastDay;
+      i++
+    ) {
+      week.push({ day: i, isCurrentMonth: false, isCurrentDay: false });
     }
 
-    // Fill in the days of the month
-    for (let day = 1; day <= lastDayOfMonth.getDate(); day++) {
+    // Fill in the days of the current month
+    for (let day = 1; day <= daysInMonth; day++) {
       const isCurrentDay =
-        day === currentDate.getDate() &&
-        month === currentDate.getMonth() &&
-        year === currentDate.getFullYear();
+        currentYear === currentDate.getFullYear() &&
+        currentMonth === currentDate.getMonth() &&
+        day === currentDay;
 
-      week.push({
-        day,
-        isCurrentDay,
-      });
-
-      // Start a new week when reaching Saturday (index 6)
+      week.push({ day, isCurrentMonth: true, isCurrentDay });
       if (week.length === 7) {
         this.calendarDays.push([...week]);
         week = [];
       }
-
-      currentDay = day + 1;
+      currentCalendarDay = day + 1;
     }
 
-    // Fill in the trailing empty cells after the last day of the month
-    for (let i = lastDayOfWeek + 1; i < 7; i++) {
-      week.push(0);
+    // Fill in the days of the next month if necessary
+    if (week.length > 0) {
+      const nextMonthDays = 7 - week.length;
+      for (let i = 1; i <= nextMonthDays; i++) {
+        week.push({ day: i, isCurrentMonth: false, isCurrentDay: false });
+      }
+      this.calendarDays.push([...week]);
     }
-
-    // Add the last week to the calendarDays array
-    this.calendarDays.push([...week]);
   }
 }
